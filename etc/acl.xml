@@ -12,7 +12,7 @@
 				<resource id="Magento_Backend::stores">
 					<resource id="Magento_Backend::stores_settings">
 						<resource id="Magento_Config::config">
-							<resource id="Dtech_GoogleCustomerReviews::config_dtech_googlecustomerreviews" title="googlecustomerreviews"/>
+							<resource id="Dtech_GoogleCustomerReviews::config_dtech_googlecustomerreviews" title="Google Customer Reviews"/>
 						</resource>
 					</resource>
 				</resource>

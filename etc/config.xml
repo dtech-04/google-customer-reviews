@@ -7,6 +7,20 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
 	<default>
-		
+		<google_customer_reviews>
+			<general>
+				<google_merchant_id/>
+				<language>en_US</language>
+			</general>
+			<google_customer_reviews_badge>
+				<enabled>0</enabled>
+				<badge_position>BOTTOM_LEFT</badge_position>
+			</google_customer_reviews_badge>
+			<google_customer_reviews_survey>
+				<enabled>0</enabled>
+				<estimated_delivery_days>3</estimated_delivery_days>
+				<dialog_style>CENTER_DIALOG</dialog_style>
+			</google_customer_reviews_survey>
+		</google_customer_reviews>
 	</default>
 </config>
