@@ -1,4 +1,5 @@
-# Mage2 Module Dtech GoogleCustomerReviews
+# Dtech Google Customer Reviews
+Magento integration for Google Customer Reviews
 
     ``dtech/module-googlecustomerreviews``
 
