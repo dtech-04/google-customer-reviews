@@ -1,0 +1,25 @@
+<!-- BEGIN GCR Opt-in Module Code -->
+<script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer></script>
+<script>
+    window.renderOptIn = function() {
+        window.gapi.load('surveyoptin', function() {
+            window.gapi.surveyoptin.render(
+            {
+                "merchant_id": "<?= $block->getMerchantId(); ?>",
+                "order_id": "<?= $block->getOrderId(); ?>",
+                "email": "<?= $block->getEmail(); ?>",
+                "delivery_country": "<?= $block->getDeliveryCountry(); ?>",
+                "estimated_delivery_date": "<?= $block->getEstimatedDeliveryDate(); ?>",
+                "opt_in_style": "<?= $block->getOptInStyle(); ?>"
+            });
+        });
+    }
+</script>
+<!-- END GCR Opt-in Module Code -->
+<!-- BEGIN GCR Language Code -->
+<script>
+    window.___gcfg = { 
+        lang: '<?= $block->getLanguage(); ?>' 
+    };
+</script>
+<!-- END GCR Language Code -->

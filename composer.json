@@ -1,0 +1,24 @@
+{
+    "name": "dtech/module-googlecustomerreviews",
+    "description": "Magento 2 Google Customer Reviews extension",
+    "version": "1.0.0",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "deepakjangid04@gmail.com",
+            "name": "Dtech"
+        }
+    ],
+    "require": {
+        "dtech/module-base": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dtech\\GoogleCustomerReviews\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

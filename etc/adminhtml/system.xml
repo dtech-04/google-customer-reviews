@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Copyright © Dtech, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="google_customer_reviews" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>Google Customer Reviews</label>
+			<tab>dtech</tab>
+			<resource>Dtech_GoogleCustomerReviews::config_dtech_googlecustomerreviews</resource>
+			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>General Configuration</label>
+				<field id="google_merchant_id" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Google Merchant ID</label>
+					<comment/>
+				</field>
+				<field id="language" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>Language</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Locale</source_model>
+				</field>
+			</group>
+			<group id="google_customer_reviews_badge" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Badge Configuration</label>
+				<field id="enabled" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>Badge</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+				</field>
+				<field id="badge_position" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>Badge Position</label>
+					<comment/>
+					<source_model>Dtech\GoogleCustomerReviews\Model\Config\Source\BadgePosition</source_model>
+					<depends>
+				        <field id="enabled">1</field>
+				    </depends>
+				</field>
+			</group>
+			<group id="google_customer_reviews_survey" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Survey Configuration</label>
+				<field id="enabled" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>Survey</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+				</field>
+				<field id="estimated_delivery_days" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Estimated Delivery Days</label>
+					<comment/>
+					<depends>
+				        <field id="enabled">1</field>
+				    </depends>
+				</field>
+				<field id="dialog_style" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>Dialog Style</label>
+					<comment/>
+					<source_model>Dtech\GoogleCustomerReviews\Model\Config\Source\DialogStyle</source_model>
+					<depends>
+				        <field id="enabled">1</field>
+				    </depends>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
