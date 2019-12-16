@@ -1,5 +1,5 @@
 {
-    "name": "dtech/module-google-customer-reviews",
+    "name": "dtech/google-customer-reviews",
     "description": "Magento 2 Google Customer Reviews extension",
     "version": "1.0.0",
     "type": "magento2-module",
