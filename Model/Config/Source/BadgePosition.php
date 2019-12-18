@@ -9,7 +9,8 @@ class BadgePosition implements \Magento\Framework\Option\ArrayInterface
     {
         return [
         	['value' => 'BOTTOM_LEFT', 'label' => __('BOTTOM LEFT')],
-        	['value' => 'BOTTOM_RIGHT', 'label' => __('BOTTOM RIGHT')]
+        	['value' => 'BOTTOM_RIGHT', 'label' => __('BOTTOM RIGHT')],
+            ['value' => 'BOTTOM_RIGHT', 'label' => __('INLINE')]
         ];
     }
 
@@ -17,7 +18,8 @@ class BadgePosition implements \Magento\Framework\Option\ArrayInterface
     {
         return [
         	'BOTTOM_LEFT' => __('BOTTOM LEFT'),
-        	'BOTTOM_RIGHT' => __('BOTTOM RIGHT')
+        	'BOTTOM_RIGHT' => __('BOTTOM RIGHT'),
+            'BOTTOM_RIGHT' => __('INLINE')
         ];
     }
 }
